@@ -11,3 +11,27 @@ const backpackFullOfAmmo = [
     })
     
     console.log(totalValue)
+
+    function calcOrderCost(order) {order.quantity * order.priceEa
+    }
+    
+    function doSomethingWithNumber(number, callbackFunction) {
+      return callbackFunction(number)
+    }
+    
+    function dividebyTwo(num) {
+      return num / 2
+    }
+    
+    function double(num) {
+      return num * 2
+    }
+    
+    function triple(num) {
+      return num * 3
+    }
+    
+    console.log(doSomethingWithNumber(10, dividebyTwo)) //5
+    console.log(doSomethingWithNumber(10, double)) //20
+    console.log(doSomethingWithNumber(10, triple)) //30
+    
