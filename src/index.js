@@ -34,4 +34,9 @@ const backpackFullOfAmmo = [
     console.log(doSomethingWithNumber(10, dividebyTwo)) //5
     console.log(doSomethingWithNumber(10, double)) //20
     console.log(doSomethingWithNumber(10, triple)) //30
+
+    const numbers = [1, 2, 3, 4, 5]
+
+const doubledNumbers = numbers.map((number) => number * 2)
+console.log(doubledNumbers) // [2, 4, 6, 8, 10]
     
