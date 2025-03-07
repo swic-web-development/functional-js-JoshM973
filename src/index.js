@@ -39,4 +39,16 @@ const backpackFullOfAmmo = [
 
 const doubledNumbers = numbers.map((number) => number * 2)
 console.log(doubledNumbers) // [2, 4, 6, 8, 10]
+
+const tableRows = backpackFullOfAmmo.map((ammo) => {
+    return `<tr>
+        <td>${ammo.name}</td>
+        <td>${ammo.quantity}</td>
+        <td>${ammo.priceEa}</td>
+    </tr>`
+}).join('\n')
+
+console.log(tableRows)
+
+
     
