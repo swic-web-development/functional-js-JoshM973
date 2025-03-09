@@ -16,3 +16,6 @@ const playersWithMoreFragsThanDeaths = players.filter((player) => {
         return total + player.frags
     }, 0)
     console.log(totalFrags)
+
+    const firstPlayerWithMoreFragsThanDeaths =players.find((player) => player.frags > player.deaths)
+    console.log(firstPlayerWithMoreFragsThanDeaths)
