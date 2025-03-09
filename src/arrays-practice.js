@@ -11,3 +11,8 @@ const playersWithMoreFragsThanDeaths = players.filter((player) => {
     })
 
     console.log(playersWithMoreFragsThanDeaths)
+
+    const totalFrags = players.reduce((total, player)=> {
+        return total + player.frags
+    }, 0)
+    console.log(totalFrags)
