@@ -25,3 +25,6 @@ const playersWithMoreFragsThanDeaths = players.filter((player) => {
 
     const everyPlayerHasMoreFragsThanDeaths = players.every((player) => player.frags > player.deaths)
     console.log(everyPlayerHasMoreFragsThanDeaths)
+
+    const sortedPlayer = players.sort((a, b) => b.frags- a.frags)
+    console.log(sortedPlayer)
