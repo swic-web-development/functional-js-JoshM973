@@ -86,4 +86,5 @@ const playersWithMoreFragsThanDeaths = players.filter((player) => {
         }, 0)
         console.log(totalHealth)
 
-        
+        const healthGreaterThan150 = monsters.filter((monster) => monster.health > 150)
+        console.log(healthGreaterThan150)
