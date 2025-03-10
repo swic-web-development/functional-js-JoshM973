@@ -91,3 +91,6 @@ const playersWithMoreFragsThanDeaths = players.filter((player) => {
 
         const sortedDamage = monsters.sort((a, b) => b.damage - a.damage)
         console.log(sortedDamage)
+
+        const monsterNames = monsters.map((monster) => monster.name)
+        console.log(monsterNames)
