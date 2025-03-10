@@ -28,3 +28,14 @@ const playersWithMoreFragsThanDeaths = players.filter((player) => {
 
     const sortedPlayer = players.sort((a, b) => b.frags- a.frags)
     console.log(sortedPlayer)
+
+    const backpackFullOfAmmo = [
+        { name: 'bullets', quantity: 10, priceEa: 0.5 },
+        { name: 'shotgun shells', quantity: 4, priceEa: 0.5 },
+        { name: 'rockets', quantity: 1, priceEa: 5.0 },
+        { name: 'energy cell units', quantity: 20, priceEa: 0.2 },
+    ]
+    const totalValue = backpackFullOfAmmo.reduce((total, backpackFullOfAmmo)=> {
+        return total + (backpackFullOfAmmo.quantity * backpackFullOfAmmo.priceEa)
+    }, 0)
+    console.log(totalValue)
